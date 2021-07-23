@@ -106,7 +106,9 @@ namespace JWTTest.Controllers
             else
             {
                 return BadRequest(result.Errors);
-            }
+            } // end else
+
+
         }
     }
 }
