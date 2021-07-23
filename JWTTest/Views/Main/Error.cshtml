@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Error";
+}
+
+<h1>Error!</h1>
+@if (ViewBag.ErrorId == 500)
+{
+    <h2 class="text-danger">Something went wrong...</h2>
+}
+else if (ViewBag.ErrorId == 404)
+{
+    <h2 class="text-danger">Page not found!</h2>
+}
+else if (ViewBag.ErrorId == 401)
+{
+    <h2 class="text-danger">UNAUTHORIZED!</h2>
+}
+else
+{
+    <h2 class="text-danger">Something else!</h2>
+}
+<a asp-area="Admin" asp-action="Login" asp-controller="Login">Go to the main page...</a>
