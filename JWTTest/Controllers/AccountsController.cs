@@ -80,13 +80,8 @@ namespace JWTTest.Controllers
             return response;
         }
 
-        ///// test /////
-        // test2///
-        /// <summary>
-        /// ///////////
-        /// </summary>
-        /// <param name="credentials"></param>
-        /// <returns></returns>
+        ///// relese /////
+
         [HttpPost("register")]
         public async Task<IActionResult> Register(AccountCredentialsDTO credentials)
         {
